@@ -14,9 +14,9 @@ const createDate = (num1, num2) => {
     arrKosong.push(new Date(num1[i]).getTime()/1000)
   }
   if(!isNaN(num2)){
-    return `"${arrKosong[num2]}"`
+    return `${arrKosong[num2]}`
   }else{
-    return `"${arrKosong.sort().join("-")}"`
+    return `${arrKosong.sort().join("-")}`
   }
 }
 
