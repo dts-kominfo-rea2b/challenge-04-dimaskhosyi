@@ -8,7 +8,17 @@ const dates = [
 ];
 
 // TODO: Buatlah fungsi createDate
-const createDate = null;
+const createDate = (num1, num2) => {
+  let arrKosong = []
+  for(let i = 0; i < num1.length; i++){
+    arrKosong.push(new Date(num1[i]).getTime()/1000)
+  }
+  if(!isNaN(num2)){
+    return arrKosong[num2]
+  }else{
+    return arrKosong.sort()
+  }
+}
 
 // ! JANGAN DIMODIFIKASI
 (() => {
